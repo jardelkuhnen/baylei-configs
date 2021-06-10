@@ -1,28 +1,13 @@
-server:
-  port: 9092
 
-eureka:
-  instance:
-    hostname: localhost
-    port: 9091
-  client:
-    registerWithEureka: true
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-  server:
-    wait-time-in-ms-when-sync-empty: 3000
+server.port: 9092
 
-# spring:
-#     datasource:
-#         driver-class-name: com.mysql.cj.jdbc.Driver
-#         password: 'MySql2019!'
-#         platform: mysql
-#         url: jdbc:mysql://localhost/delivery-order?verifyServerCertificate=false&useSSL=false&requireSSL=false
-#         username: root
-#     jpa:
-#         database-platform: org.hibernate.dialect.MySQLDialect
-#         generate-ddl: false
-#         hibernate:
-#             ddl-auto: create
-#         show-sql: true
+eureka.instance.hostname: localhost
+eureka.instance.port: 9091
+eureka.instance.client:
+eureka.instance.clientregisterWithEureka: true
+eureka.instance.clientfetchRegistry: false
+eureka.instance.clientserviceUrl.defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+eureka.instance.client.server.wait-time-in-ms-when-sync-empty: 3000
+
+spring.data.mongodb.uri: localhost:27017
+spring.data.mongodb.database: baylei
