@@ -3,6 +3,8 @@ spring.profiles: prod
 
 server.port: 9092
 
+teste.valor: Jardel
+
 info:
   foo: bar
   someList: [2, 3, 7, 9]
