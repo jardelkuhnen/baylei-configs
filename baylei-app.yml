@@ -1,4 +1,6 @@
 
+spring.profiles: cloud
+
 server.port: 9092
 
 eureka.instance.hostname: localhost
