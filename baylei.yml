@@ -2,7 +2,9 @@
 spring.profiles: prod
 
 server.port: 9092
+server.context-path: bailey
 
+management.context-path: /mgmt
 management.endpoint.info.enabled: true
 management.endpoint.metrics.enabled: true
 
