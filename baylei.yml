@@ -19,3 +19,4 @@ eureka.instance.client.server.wait-time-in-ms-when-sync-empty: 3000
 spring.data.mongodb.uri: mongodb://localhost:27017/baylei
 
 server.error.include-message: always
+server.error.include-binding-errors: always
