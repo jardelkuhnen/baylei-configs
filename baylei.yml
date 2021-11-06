@@ -7,6 +7,7 @@ server.context-path: bailey
 management.context-path: /mgmt
 management.endpoint.info.enabled: true
 management.endpoint.metrics.enabled: true
+management.endpoints.web.exposure.include: health, info
 
 eureka.instance.hostname: localhost
 eureka.instance.port: 9091
