@@ -1,5 +1,5 @@
 
-spring.profiles: prod
+spring.profiles: dev
 
 server.port: 9092
 server.context-path: bailey
