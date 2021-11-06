@@ -5,7 +5,7 @@ server.port: 9092
 server.context-path: bailey
 
 management.context-path: /mgmt
-management.endpoint.info.enabled: true
+management.endpoint.info.enabled: false
 management.endpoint.metrics.enabled: true
 management.endpoints.web.exposure.include: health, info
 
