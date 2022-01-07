@@ -17,3 +17,5 @@ eureka.instance.clientserviceUrl.defaultZone: http://${eureka.instance.hostname}
 eureka.instance.client.server.wait-time-in-ms-when-sync-empty: 3000
 
 spring.data.mongodb.uri: mongodb://localhost:27017/baylei
+
+database.client.persistence.port: true
