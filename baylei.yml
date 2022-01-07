@@ -5,8 +5,9 @@ server.port: 9092
 server.context-path: bailey
 
 management.context-path: /mgmt
-management.endpoint.info.enabled: true
+management.endpoint.info.enabled: false
 management.endpoint.metrics.enabled: true
+management.endpoints.web.exposure.include: health, info
 
 eureka.instance.hostname: localhost
 eureka.instance.port: 9091
@@ -18,4 +19,29 @@ eureka.instance.client.server.wait-time-in-ms-when-sync-empty: 3000
 
 spring.data.mongodb.uri: mongodb://localhost:27017/baylei
 
+<<<<<<< HEAD
 database.client.persistence.port: true
+=======
+server.error.include-message: always
+server.error.include-binding-errors: always
+
+#h2
+spring.datasource.url: jdbc:h2:mem:baylei
+spring.datasource.driverClassName: org.h2.Driver
+spring.datasource.username: sa
+spring.datasource.password:
+spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+
+#h2_new
+#spring.h2.url: jdbc:h2:mem:baylei
+#spring.h2.driver-class-name: org.h2.Driver
+#spring.h2.username: sa
+#spring.h2.password:
+
+spring.h2.console.enabled: true
+spring.h2.console.path: /h2-console
+spring.h2.console.settings.trace: false
+spring.h2.console.settings.web-allow-others: false
+
+spring.main.allow-bean-definition-overriding: true
+>>>>>>> ddc9313da5c1d233d9b9d2ed182ac26b47a27a27
